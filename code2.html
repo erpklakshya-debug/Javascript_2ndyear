@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <script>
+        function sum(){
+            let age = parseInt(prompt("enter your age"));
+            if(age>=18){
+                document.write("you are eligible for voting");
+            }
+            else{
+                document.write("you are not eligible for voting");
+            }
+        }
+
+
+        function check(){
+            let a = 20;
+            let b = parseInt(prompt("enter the number to check"));
+            let value = a>b;
+            if(value){   
+                document.write("a is greater than b");
+            }
+            else{
+                document.write("b is greater than a");
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <input type="button" onclick="sum()" value="check your eligibility">
+    
+    <input type=" button" onclick="check()" value=" check for greater number">
+</body>
+</html>
