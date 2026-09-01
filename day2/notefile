@@ -1,0 +1,51 @@
+if c = [1, 2, 3, 4, 5]
+
+pop()
+    - pick the last element and return the value
+    - console.log(c.length) // 4
+push()
+    - add an element to the end of the array and return the new length
+    - console.log(c.length) // 6
+shift()
+    - remove the first element and return the value
+    - console.log(c.length) // 5
+unshift()
+    - add an element to the beginning of the array and return the value
+    - console.log(c.length) // 6
+slice()
+    - extract a portion of the array and return it
+    - console.log(c.length) // 5
+splice()
+    - remove or replace elements from an array
+    - console.log(c.length) // 5
+
+toUpperCase()
+    - convert a string to uppercase letters
+    - console.log(c.toUpperCase()) // "1,2,3,4,5" (if c is a string)
+
+toLowerCase()
+    - convert a string to lowercase letters
+    - console.log(c.toLowerCase()) // "1,2,3,4,5" (if c is a string)
+
+charAt()
+    - return the character at a specified index in a string
+    - console.log(c.charAt(0)) // "1" (if c is a string)
+
+indexOf()
+    - search for the given number, string, from the whole string by assigning each element a number. indexing
+    - let s = er.pklakshya@gmail.com
+    - atpost = s.indexOf("a"); // finds "a" at 6
+
+lastIndexOf()
+    - do the same work, just from backwards of the string.
+    - let s = dotpos = e.lastIndexOf("."); // finds "." at 18
+
+slice()
+    - extracts a section of a string and returns it as a new string
+    - let s = "Hello, World!";
+    - let result = s.slice(7, 12); // result is "World"
+
+include()
+replace()
+concat()
+    
