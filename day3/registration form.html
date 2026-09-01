@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<body>
+    <form action="registration.php" method="post">
+        <label for="name">NAME -</label>
+        <input type = "text" id="name" name="name" required><br><br>
+
+        <label for="email">EMAIL -</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="number">NUMBER -</label>
+        <input type="number" id="number" name="number" required><br><br>
+
+        <label for="password">PASSWORD -</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="re-password">RE-PASSWORD -</label>
+        <input type="password" id="r-password" name="re-password" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        function validateForm() {
+    let n = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let number = document.getElementById("number").value;
+    let password = document.getElementById("password").value;
+    let rpassword = document.getElementById("r-password").value;
+
+    if (n.trim() == "") {
+        alert("Please fill your name");
+        return false;
+    }
+
+    if (email.trim() == "") {
+        alert("Please fill your email");
+        return false;
+    }
+
+    if (number.trim() == "") {
+        alert("Please fill your number");
+        return false;
+    }
+
+    if (password.trim() == "") {
+        alert("Please enter your password");
+        return false;
+    }
+
+    if (rpassword.trim() == "") {
+        alert("Please re-enter your password");
+        return false;
+    }
+
+    if (password != rpassword) {
+        alert("Passwords do not match");
+        return false;
+    }
+
+    return true;
+}
+        
+    </script>
+</body>
+</html>
